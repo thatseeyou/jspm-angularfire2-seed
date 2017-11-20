@@ -17,7 +17,7 @@
   "devDependencies": {
     "jspm": "^0.16.53",
     "lite-server": "^2.3.0",
-    "typescript": "^2.3.2"
+    "typescript": "^2.6.1"
   },
   "dependencies": {},
   "jspm": {
@@ -27,17 +27,17 @@
     },
     "configFile": "src/systemjs.config.js",
     "dependencies": {
-      "@angular/common": "npm:@angular/common@^4.1.2",
-      "@angular/compiler": "npm:@angular/compiler@^4.1.2",
-      "@angular/core": "npm:@angular/core@^4.1.2",
-      "@angular/forms": "npm:@angular/forms@^4.1.2",
-      "@angular/http": "npm:@angular/http@^4.1.2",
-      "@angular/platform-browser": "npm:@angular/platform-browser@^4.1.2",
-      "@angular/platform-browser-dynamic": "npm:@angular/platform-browser-dynamic@^4.1.2",
-      "@angular/router": "npm:@angular/router@^4.1.2",
-      "core-js": "npm:core-js@^2.4.1",
-      "rxjs": "npm:rxjs@^5.4.0",
-      "zone.js": "npm:zone.js@^0.8.10"
+      "@angular/common": "npm:@angular/common@^4.4.6",
+      "@angular/compiler": "npm:@angular/compiler@^4.4.6",
+      "@angular/core": "npm:@angular/core@^4.4.6",
+      "@angular/forms": "npm:@angular/forms@^4.4.6",
+      "@angular/http": "npm:@angular/http@^4.4.6",
+      "@angular/platform-browser": "npm:@angular/platform-browser@^4.4.6",
+      "@angular/platform-browser-dynamic": "npm:@angular/platform-browser-dynamic@^4.4.6",
+      "@angular/router": "npm:@angular/router@^4.4.6",
+      "core-js": "npm:core-js@^2.5.1",
+      "rxjs": "npm:rxjs@^5.5.2",
+      "zone.js": "npm:zone.js@^0.8.18"
     },
     "devDependencies": {}
   }

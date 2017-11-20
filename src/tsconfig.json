@@ -22,7 +22,7 @@
     // "isolatedModules": true,               /* Transpile each file as a separate module (similar to 'ts.transpileModule'). */
                                               
     /* Strict Type-Checking Options */        
-    "strict": true,                           /* Enable all strict type-checking options. */
+    // "strict": true,                           /* Enable all strict type-checking options. */
     // "noImplicitAny": true,                 /* Raise error on expressions and declarations with an implied 'any' type. */
     // "strictNullChecks": true,              /* Enable strict null checks. */
     // "noImplicitThis": true,                /* Raise error on 'this' expressions with an implied 'any' type. */
@@ -38,14 +38,14 @@
     // "moduleResolution": "node",            /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
     "baseUrl": "../",                         /* Base directory to resolve non-absolute module names. */
     "paths": {
-      "rxjs" : ["jspm_packages/npm/rxjs@5.4.0"],
-			"rxjs/*" : ["jspm_packages/npm/rxjs@5.4.0/*"],
-			"core-js": ["jspm_packages/npm/core-js@2.4.1"],
-			"core-js/*": ["jspm_packages/npm/core-js@2.4.1/*"],
-			"zone.js": ["jspm_packages/npm/zone.js@0.8.10"],
-			"zone.js/*": ["jspm_packages/npm/zone.js@0.8.10/*"],
-			"zone.js/dist/zone": ["jspm_packages/npm/zone.js@0.7.7/dist/zone.js.d.ts"],
-			"@angular/*": ["jspm_packages/npm/@angular/*@4.1.2"],
+      "rxjs" : ["jspm_packages/npm/rxjs@5.5.2"],
+			"rxjs/*" : ["jspm_packages/npm/rxjs@5.5.2/*"],
+			"core-js": ["jspm_packages/npm/core-js@2.5.1"],
+			"core-js/*": ["jspm_packages/npm/core-js@2.5.1/*"],
+			"zone.js": ["jspm_packages/npm/zone.js@0.8.18"],
+			"zone.js/*": ["jspm_packages/npm/zone.js@0.8.18/*"],
+			"zone.js/dist/zone": ["jspm_packages/npm/zone.js@0.8.18/dist/zone.js.d.ts"],
+			"@angular/*": ["jspm_packages/npm/@angular/*@4.4.6"],
       "*": [
         "node_modules/@types/*",
         "types/*"
