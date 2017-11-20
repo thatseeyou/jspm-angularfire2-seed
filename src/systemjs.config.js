@@ -14,6 +14,10 @@ System.config({
         "./*.js": {
           "loader": "systemjs-angular-loader.js"
         }
+      },
+      "map": {
+        "angularfire2/database": "npm:angularfire2@5.0.0-rc.0-next/bundles/database.umd.js",
+        "angularfire2/ath": "npm:angularfire2@5.0.0-rc.0-next/bundles/auth.umd.js"
       }
     }
   },
@@ -27,6 +31,7 @@ System.config({
     "@angular/platform-browser": "npm:@angular/platform-browser@4.4.6",
     "@angular/platform-browser-dynamic": "npm:@angular/platform-browser-dynamic@4.4.6",
     "@angular/router": "npm:@angular/router@4.4.6",
+    "angularfire2": "npm:angularfire2@5.0.0-rc.0-next",
     "core-js": "npm:core-js@2.5.1",
     "rxjs": "npm:rxjs@5.5.2",
     "zone.js": "npm:zone.js@0.8.18",
@@ -45,6 +50,27 @@ System.config({
     "github:jspm/nodelibs-events@0.1.1": {
       "events": "npm:events@1.0.2"
     },
+    "github:jspm/nodelibs-http@1.7.1": {
+      "Base64": "npm:Base64@0.2.1",
+      "events": "github:jspm/nodelibs-events@0.1.1",
+      "inherits": "npm:inherits@2.0.1",
+      "stream": "github:jspm/nodelibs-stream@0.1.0",
+      "url": "github:jspm/nodelibs-url@0.1.0",
+      "util": "github:jspm/nodelibs-util@0.1.0"
+    },
+    "github:jspm/nodelibs-https@0.1.0": {
+      "https-browserify": "npm:https-browserify@0.0.0"
+    },
+    "github:jspm/nodelibs-net@0.1.2": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.1",
+      "crypto": "github:jspm/nodelibs-crypto@0.1.0",
+      "http": "github:jspm/nodelibs-http@1.7.1",
+      "net": "github:jspm/nodelibs-net@0.1.2",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "stream": "github:jspm/nodelibs-stream@0.1.0",
+      "timers": "github:jspm/nodelibs-timers@0.1.0",
+      "util": "github:jspm/nodelibs-util@0.1.0"
+    },
     "github:jspm/nodelibs-path@0.1.0": {
       "path-browserify": "npm:path-browserify@0.0.0"
     },
@@ -59,6 +85,9 @@ System.config({
     },
     "github:jspm/nodelibs-timers@0.1.0": {
       "timers-browserify": "npm:timers-browserify@1.4.2"
+    },
+    "github:jspm/nodelibs-url@0.1.0": {
+      "url": "npm:url@0.10.3"
     },
     "github:jspm/nodelibs-util@0.1.0": {
       "util": "npm:util@0.10.3"
@@ -115,6 +144,51 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2",
       "rxjs": "npm:rxjs@5.5.2",
       "tslib": "npm:tslib@1.8.0"
+    },
+    "npm:@firebase/app@0.1.2": {
+      "@firebase/util": "npm:@firebase/util@0.1.2"
+    },
+    "npm:@firebase/auth@0.2.2": {
+      "@firebase/app": "npm:@firebase/app@0.1.2"
+    },
+    "npm:@firebase/database@0.1.3": {
+      "@firebase/app": "npm:@firebase/app@0.1.2",
+      "@firebase/util": "npm:@firebase/util@0.1.2",
+      "buffer": "github:jspm/nodelibs-buffer@0.1.1",
+      "faye-websocket": "npm:faye-websocket@0.11.1",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:@firebase/firestore@0.1.4": {
+      "@firebase/app": "npm:@firebase/app@0.1.2",
+      "@firebase/webchannel-wrapper": "npm:@firebase/webchannel-wrapper@0.2.4",
+      "buffer": "github:jspm/nodelibs-buffer@0.1.1",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:@firebase/messaging@0.1.3": {
+      "@firebase/app": "npm:@firebase/app@0.1.2",
+      "@firebase/util": "npm:@firebase/util@0.1.2"
+    },
+    "npm:@firebase/polyfill@0.1.2": {
+      "promise-polyfill": "npm:promise-polyfill@6.0.2"
+    },
+    "npm:@firebase/storage@0.1.2": {
+      "@firebase/app": "npm:@firebase/app@0.1.2"
+    },
+    "npm:@firebase/util@0.1.2": {
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:@firebase/webchannel-wrapper@0.2.4": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.1"
+    },
+    "npm:angularfire2@5.0.0-rc.0-next": {
+      "@angular/common": "npm:@angular/common@4.4.6",
+      "@angular/core": "npm:@angular/core@4.4.6",
+      "@angular/platform-browser": "npm:@angular/platform-browser@4.4.6",
+      "@angular/platform-browser-dynamic": "npm:@angular/platform-browser-dynamic@4.4.6",
+      "firebase": "npm:firebase@4.6.2",
+      "rxjs": "npm:rxjs@5.5.2",
+      "zone.js": "npm:zone.js@0.8.18"
     },
     "npm:asn1.js@4.9.2": {
       "bn.js": "npm:bn.js@4.11.8",
@@ -251,6 +325,9 @@ System.config({
       "randombytes": "npm:randombytes@2.0.5",
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
     },
+    "npm:dom-storage@2.0.2": {
+      "fs": "github:jspm/nodelibs-fs@0.1.2"
+    },
     "npm:elliptic@6.4.0": {
       "bn.js": "npm:bn.js@4.11.8",
       "brorand": "npm:brorand@1.1.0",
@@ -265,6 +342,32 @@ System.config({
       "buffer": "github:jspm/nodelibs-buffer@0.1.1",
       "md5.js": "npm:md5.js@1.3.4",
       "safe-buffer": "npm:safe-buffer@5.1.1"
+    },
+    "npm:faye-websocket@0.11.1": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.1",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "http": "github:jspm/nodelibs-http@1.7.1",
+      "https": "github:jspm/nodelibs-https@0.1.0",
+      "net": "github:jspm/nodelibs-net@0.1.2",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "stream": "github:jspm/nodelibs-stream@0.1.0",
+      "tls": "github:jspm/nodelibs-tls@0.1.0",
+      "url": "github:jspm/nodelibs-url@0.1.0",
+      "util": "github:jspm/nodelibs-util@0.1.0",
+      "websocket-driver": "npm:websocket-driver@0.7.0"
+    },
+    "npm:firebase@4.6.2": {
+      "@firebase/app": "npm:@firebase/app@0.1.2",
+      "@firebase/auth": "npm:@firebase/auth@0.2.2",
+      "@firebase/database": "npm:@firebase/database@0.1.3",
+      "@firebase/firestore": "npm:@firebase/firestore@0.1.4",
+      "@firebase/messaging": "npm:@firebase/messaging@0.1.3",
+      "@firebase/polyfill": "npm:@firebase/polyfill@0.1.2",
+      "@firebase/storage": "npm:@firebase/storage@0.1.2",
+      "buffer": "github:jspm/nodelibs-buffer@0.1.1",
+      "dom-storage": "npm:dom-storage@2.0.2",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "xmlhttprequest": "npm:xmlhttprequest@1.8.0"
     },
     "npm:hash-base@2.0.2": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.1",
@@ -287,6 +390,12 @@ System.config({
       "minimalistic-crypto-utils": "npm:minimalistic-crypto-utils@1.0.1",
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
     },
+    "npm:http-parser-js@0.4.9": {
+      "assert": "github:jspm/nodelibs-assert@0.1.0"
+    },
+    "npm:https-browserify@0.0.0": {
+      "http": "github:jspm/nodelibs-http@1.7.1"
+    },
     "npm:inherits@2.0.1": {
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
@@ -296,7 +405,7 @@ System.config({
     "npm:md5.js@1.3.4": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.1",
       "hash-base": "npm:hash-base@3.0.4",
-      "inherits": "npm:inherits@2.0.3"
+      "inherits": "npm:inherits@2.0.1"
     },
     "npm:miller-rabin@4.0.1": {
       "bn.js": "npm:bn.js@4.11.8",
@@ -338,6 +447,9 @@ System.config({
       "parse-asn1": "npm:parse-asn1@5.1.0",
       "randombytes": "npm:randombytes@2.0.5"
     },
+    "npm:punycode@1.3.2": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
     "npm:randombytes@2.0.5": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.1",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
@@ -355,7 +467,7 @@ System.config({
       "buffer": "github:jspm/nodelibs-buffer@0.1.1",
       "core-util-is": "npm:core-util-is@1.0.2",
       "events": "github:jspm/nodelibs-events@0.1.1",
-      "inherits": "npm:inherits@2.0.3",
+      "inherits": "npm:inherits@2.0.1",
       "isarray": "npm:isarray@0.0.1",
       "process": "github:jspm/nodelibs-process@0.1.2",
       "stream-browserify": "npm:stream-browserify@1.0.0",
@@ -384,7 +496,7 @@ System.config({
     },
     "npm:stream-browserify@1.0.0": {
       "events": "github:jspm/nodelibs-events@0.1.1",
-      "inherits": "npm:inherits@2.0.3",
+      "inherits": "npm:inherits@2.0.1",
       "readable-stream": "npm:readable-stream@1.1.14"
     },
     "npm:string_decoder@0.10.31": {
@@ -393,12 +505,41 @@ System.config({
     "npm:timers-browserify@1.4.2": {
       "process": "npm:process@0.11.10"
     },
+    "npm:url@0.10.3": {
+      "assert": "github:jspm/nodelibs-assert@0.1.0",
+      "punycode": "npm:punycode@1.3.2",
+      "querystring": "npm:querystring@0.2.0",
+      "util": "github:jspm/nodelibs-util@0.1.0"
+    },
     "npm:util@0.10.3": {
       "inherits": "npm:inherits@2.0.1",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:vm-browserify@0.0.4": {
       "indexof": "npm:indexof@0.0.1"
+    },
+    "npm:websocket-driver@0.7.0": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.1",
+      "crypto": "github:jspm/nodelibs-crypto@0.1.0",
+      "events": "github:jspm/nodelibs-events@0.1.1",
+      "http-parser-js": "npm:http-parser-js@0.4.9",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "stream": "github:jspm/nodelibs-stream@0.1.0",
+      "url": "github:jspm/nodelibs-url@0.1.0",
+      "util": "github:jspm/nodelibs-util@0.1.0",
+      "websocket-extensions": "npm:websocket-extensions@0.1.3"
+    },
+    "npm:websocket-extensions@0.1.3": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:xmlhttprequest@1.8.0": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.1",
+      "child_process": "github:jspm/nodelibs-child_process@0.1.0",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "http": "github:jspm/nodelibs-http@1.7.1",
+      "https": "github:jspm/nodelibs-https@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "url": "github:jspm/nodelibs-url@0.1.0"
     },
     "npm:zone.js@0.8.18": {
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
